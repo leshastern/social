@@ -1,2 +1,3 @@
-# social
-Second react project "social network"
+# Social Network React Project (in progress..)
+
+Try ``` npm install ``` and then ```npm start``` to launch this
