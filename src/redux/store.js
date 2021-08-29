@@ -2,7 +2,6 @@ import { renderApp } from "..";
 import  messagePageReducer  from "./messagePageReducer";
 import profilePageReducer  from "./profilePageReducer";
 
-
 let store = {
   _state : {
     profilePage: {
@@ -41,20 +40,9 @@ let store = {
   }
 }
 
-export const addPostActionCreator = () => {
-  return {type: "ADD-POST"}
-}
 
-export const changePostTextActionCreater = (currentPost) => {
-  return {type: "CHANGE-POST-TEXT", post: currentPost}
-}
 
-export const addMsgActionCreater = (sndr) => {
-  return {type: "ADD-MSG", sender: sndr}
-}
-export const changeMSGActionCreater = (message) => {
-  return {type:'CHANGE-MSG', msg: message}
-} 
+
 
 export default store;
 

@@ -2,23 +2,21 @@ import React from 'react'
 import classes from  './Dialogs.module.css'
 import Dialog from './Dialog/Dialog'
 import Message from './Messages/Message'
-import { addMsgActionCreater, changeMSGActionCreater } from '../../redux/store'
+import { addMsgActionCreater, changeMSGActionCreater } from '../../redux/messagePageReducer'
 
 
 
 
 const Dialogs = (props) => {
-    
+
     let newMsg = React.createRef();
     let addMsg = () =>
     {
-        let sndr = Math.random() < 0.5 ? "sender":"receiver";
-        props.dispatch(addMsgActionCreater(sndr));
+        props.addMsg();
     }
     let onMsgChange = () => {
-        let body = newMsg.current.value
-        let action = changeMSGActionCreater(body);
-        props.dispatch(action);
+        let body = newMsg.current.value;
+        props.onMsgChange(body);
     }
 
     let users = props.messagePage.dialogsData.map (user => <Dialog name={user.name} id = {user.id} ava = {user.ava}/>)
@@ -33,11 +31,12 @@ const Dialogs = (props) => {
             <div className = {classes.Messages}>
                 
                 {messages}
-            </div>
-            <div>
+                <div>
                 <textarea onChange = {onMsgChange} value = {props.messagePage.currentMsg} ref = {newMsg}></textarea>
-                <button  onClick = { addMsg }>Добавить</button>
+                <div><button  onClick = { addMsg }>Добавить</button></div>
             </div>
+            </div>
+            
             </div>
         </div>
     )
