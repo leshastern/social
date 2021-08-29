@@ -1,0 +1,18 @@
+
+.item_receiver, .item_sender {
+    height: 35px;
+    width: 150px;
+    padding: 10px 0 0 10px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.item_sender {
+    grid-area: "s";
+    
+}
+.item_receiver {
+    grid-area : "n";
+    margin-left: auto;
+}

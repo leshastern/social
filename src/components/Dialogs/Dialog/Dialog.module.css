@@ -1,0 +1,20 @@
+.item {
+    display: grid;
+    grid-template-areas: "a i";
+   
+}
+.info{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    grid-area: "i";
+    color: gold;
+}
+
+.ava {
+    grid-area: "a";
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+}
+
