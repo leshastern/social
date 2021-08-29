@@ -4,11 +4,11 @@ import classes from './Profile.module.css'
 
 
 const Profile = (props) => {
-    console.log(props);
+
     return (
         <div className = "Profile">
         <MyProfile />
-       <MyPosts postData = {props.postData}  dispatch = {props.dispatch} newPostText = {props.postData.newPostText} />
+       <MyPosts postData = {props.profilePage.postData}  dispatch = {props.dispatch} newPostText = {props.profilePage.newPostText} />
       </div>
     )
 }
