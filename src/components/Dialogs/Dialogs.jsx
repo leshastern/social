@@ -19,8 +19,8 @@ const Dialogs = (props) => {
         props.onMsgChange(body);
     }
 
-    let users = props.messagePage.dialogsData.map (user => <Dialog name={user.name} id = {user.id} ava = {user.ava}/>)
-    let messages = props.messagePage.messageData.map (msg => <Message message={msg.message} cl = {msg.type}/>)
+    let users = props.messagePage.dialogsData.map (user => <Dialog name={user.name} id = {user.id} key = {user.id} ava = {user.ava}/>)
+    let messages = props.messagePage.messageData.map (msg => <Message message={msg.message}  id = {msg.id} cl = {msg.type}/>)
     return (
         <div> 
             <div className = {classes.Dialogs}>
