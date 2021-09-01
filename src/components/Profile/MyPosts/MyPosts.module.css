@@ -1,1 +1,13 @@
 
+.posts {
+    background-color: #fff;
+    border-radius: 5px;
+}
+.posts_title {
+    padding-left: 3px;
+}
+
+.posts_listposts {
+    margin-left: 5px;
+    margin-top: 10px;
+}

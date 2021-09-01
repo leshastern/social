@@ -4,10 +4,15 @@ import classes from './Post.module.css'
 const Post = (props) => {
     return (
       <div className = {classes.item}>
-         <img src = "https://s5.cdn.teleprogramma.pro/wp-content/uploads/2020/01/a76ebd11ecf1ab90a360b056f49b90a0.jpg"></img>
-             {props.message}
+         <img src = {props.ava}></img>
+             <div className = {classes.item_message}>
+                {props.message}
+               </div>
+             <div>
+                <span> Мне нравится </span> {props.count}
+             </div>
           <div>
-          <span> Likes </span> {props.count}
+          
             </div>
       </div>
     )

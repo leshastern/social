@@ -29,11 +29,14 @@ const Dialogs = (props) => {
                 {users}
                  </div>  
             <div className = {classes.Messages}>
-                
+                <div className = {classes.messages_name}>
+                    <span>Katya</span>
+
+                </div>
                 {messages}
                 <div>
                 <textarea onChange = {onMsgChange} value = {props.messagePage.currentMsg} ref = {newMsg}></textarea>
-                <div><button  onClick = { addMsg }>Добавить</button></div>
+                <div><button  onClick = { addMsg }>Отправить</button></div>
             </div>
             </div>
             

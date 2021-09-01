@@ -4,6 +4,7 @@
     width: 150px;
     padding: 10px 0 0 10px;
     border-radius: 15px;
+    border: 1px black solid;
     background-color: #fff;
     margin-top: 20px;
 }

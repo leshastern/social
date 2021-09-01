@@ -8,7 +8,7 @@ import Post from './Post/Post'
 const MyPosts = (props) => {
     
     let postElement = props.postData.map (post => 
-      <Post message={post.message} count = {post.countLikes} />
+      <Post message={post.message} count = {post.countLikes} ava = {post.ava} />
     )
     let post = React.createRef();
 
@@ -22,14 +22,18 @@ const MyPosts = (props) => {
 
     }
     return (
-       <div>
-         <h3>My Posts</h3>
-         <textarea onChange = {onPostChange} value = {props.newPostText} ref = {post}></textarea>
-         <div><button onClick = {onAddPost} >Добавить</button></div>
-         <div>
-           New Posts
+       <div className = {classes.posts}>
+         <div className = {classes.posts_title}>
+         <h3>Мои посты</h3>
          </div>
+         
+         <textarea onChange = {onPostChange} value = {props.newPostText} ref = {post}></textarea>
+         <div><button onClick = {onAddPost} >Отправить</button></div>
+         <div className = {classes.posts_listposts}>
+            Новые посты
             {postElement}
+         </div>
+            
        </div>
     )
 }

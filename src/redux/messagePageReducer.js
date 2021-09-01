@@ -9,7 +9,7 @@ let initialState = {
       {message: "Hi!", id: "1", type: "sender"},
       {message: "How old are you?", id: "1", type: "receiver"}
        ],
-    currentMsg: "sample text"
+    currentMsg: ""
      } 
      
 let messagePageReducer = (state = initialState, action) => {

@@ -1,0 +1,26 @@
+.coverage {
+  margin-top: 10px;
+}
+
+.coverage img {
+  border-radius: 5px;
+}
+
+.profile_info {
+  margin-top: 15px;
+  padding-top: 20px;
+  border-radius: 5px;
+  display: grid;
+  background-color: #fff;
+  grid-template-columns: 100px 500px;
+}
+.profile_status {
+  padding-top: 2px;
+  
+}
+.profile_ava img {
+  padding-left: 10px;
+  padding-bottom: 20px;
+  width: 80px;
+  height: 80px;
+}

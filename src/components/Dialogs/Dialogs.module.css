@@ -1,6 +1,9 @@
 .Dialogs {
    
     display: grid;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
     grid-template-areas: "s n";
     grid-template-columns: 2fr 10fr;
 }
@@ -14,6 +17,8 @@
 .Messages {
     padding: 10px;
     display: grid;
+    border:1px rgb(128, 128, 128) solid;
     grid-template-rows: 30px 1fr;
     
 }
+
